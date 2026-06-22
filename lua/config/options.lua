@@ -5,3 +5,8 @@
 -- enable wrap lines
 local opt = vim.opt
 opt.wrap = true
+
+vim.o.exrc = true
+vim.o.secure = true
+
+vim.lsp.handlers["$/progress"] = function() end
